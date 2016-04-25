@@ -1,0 +1,14 @@
+#descri{
+	width: 400px;
+	height: 200px;
+	display: block;
+}
+ul{
+	width: 350px;
+	height: 50px;
+}
+ul li{
+	float: left;
+	width: 100px;
+	padding: 2px;
+}

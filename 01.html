@@ -1,0 +1,28 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>this is a list</title>
+
+</head>
+<body>
+	<h1>what to buy</h1>
+	<p>Don't forget buy this stuff</p>
+	<ul id="v1">
+      <li id="v2">one</li>
+      <li class="v3">one</li>
+      <li>one</li>
+	</ul>
+
+</body>
+	<script type="text/javascript">
+	  var u = document.getElementById("v1");
+	  //alert(typeof u);
+	//  var l = u.getElementById("v2"); 有问题,无getElementById的方法
+	var l = u.getElementsByTagName("li"); //有效，证明getElementById与getElementsByTagName可以连用
+	//   alert(typeof l);
+	//   alert(l.length);
+	var ol = u.getElementsByClassName("v3"); //有效，证明getElementById与getElementsByClassName可以连用
+      alert(typeof ol);
+	  alert(ol.length+"here");
+	</script>
+</html>
